@@ -1,1 +1,1 @@
-anvil --fork-url $RPC_URL_MAINNET --chain-id 31337
+anvil --fork-url $RPC_URL_MAINNET
