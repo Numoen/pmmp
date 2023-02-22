@@ -33,9 +33,9 @@ contract SetupLocalScript is Script {
   uint256 immutable wethIlvPrice = uniV2Price(weth, illuvium);
   uint256 immutable ilvWethPrice = uniV2Price(illuvium, weth);
 
-  uint256 constant usdcWethBound = 3000 * 10 ** 18; // TODO: adjust for decimals
-  uint256 constant wethIlvBound = 15 * 10 ** 16;
-  uint256 constant ilvWethBound = 60 * 10 ** 18;
+  uint256 constant usdcWethBound = 2048 * 10 ** 18; // TODO: adjust for decimals
+  uint256 constant wethIlvBound = 125 * 10 ** 15;
+  uint256 constant ilvWethBound = 64 * 10 ** 18;
 
   function uniV2Price(address base, address quote) internal view returns (uint256 price) {
     address pair = UniswapV2Library.pairFor(uniV2Factory, base, quote);
